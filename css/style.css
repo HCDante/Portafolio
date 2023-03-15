@@ -1,0 +1,97 @@
+/* Estilos generales */
+
+body {
+    display: contents;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  
+  header {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #444444;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #000000;
+  }
+  
+  /* Estilos para el contenido principal */
+  
+  main {
+    margin: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el pie de página */
+  
+  footer {
+    background-color: #ffffff;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para la paleta de colores */
+  
+  .color1 {
+    color: #8872a9;
+  }
+  
+  .color2 {
+    color: #b57890;
+  }
+  
+  .color3 {
+    color: #c39b92;
+  }
+  
+  .color4 {
+    color: #c7bfb4;
+  }
+  
+  .color5 {
+    color: #cecfcd;
+  }
