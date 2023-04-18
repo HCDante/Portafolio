@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* Estilos generales */
 
 body {
@@ -10,34 +20,87 @@ body {
   
   /* Estilos para el encabezado */
   
-  header {
-    background-color: #ffffff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  nav ul {
+  header{
+    background-color:  rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.container__menu{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 60px;
+
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
     list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #444444;
+    margin-left: 36px;
+}
+
+.menu ul li a{
     text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#selected{
+    background: rgb(135, 24, 150);
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.menu nav img{
+    display: none;
+}
+
+.menu #btn_menu{
+    display: none;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    animation-duration: 3s;
+    animation-name: slidein;
   }
   
-  nav ul li a:hover {
-    color: #000000;
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
   
   /* Estilos para el contenido principal */
@@ -95,3 +158,78 @@ body {
   .color5 {
     color: #cecfcd;
   }
+
+  @media screen and (max-width:1200px){
+
+    header{
+        padding: 40px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 720px){
+  
+    .menu nav{
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: white;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+    }
+  
+    .menu ul{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+  
+    .menu ul li{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+  
+    .menu ul li a{
+        color: #bebebe;
+    }
+  
+    #selected{
+        background: none;
+        padding: 0px;
+        border-radius: none;
+        color: rgb(135, 24, 150);
+    }
+  
+    .menu nav img{
+        display: block;
+        width: 60px;
+    }
+  
+    #back_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        display: none;
+    }
+  
+    .menu #btn_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background:rgb(135, 24, 150);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+  
+    .menu #btn_menu:hover{
+        background: rgba(255, 255, 255, 0.2);
+    }
